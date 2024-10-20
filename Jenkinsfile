@@ -7,6 +7,7 @@ pipeline {
         timestamps()
         buildDiscarder(logRotator(numToKeepStr: '2'))
     }
+    stages {
            
         stage('maven build'){
             steps{
@@ -27,3 +28,4 @@ pipeline {
                 
     }
     
+}
