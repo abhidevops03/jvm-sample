@@ -36,7 +36,7 @@
    <maven.compiler.source>1.8</maven.compiler.source>
    <maven.compiler.target>1.8</maven.compiler.target>
  </properties>
- 
+<!--
   <distributionManagement>
  <!-- Publish the versioned releases here -->
  
@@ -53,4 +53,5 @@
  </repository>
 
 </distributionManagement>
+  -->
 </project>
