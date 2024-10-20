@@ -13,15 +13,7 @@ pipeline {
                 cleanWs()
             }
         }
-        /*
-        stage('clone') {
-            steps {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins-ssh-key', url: 'git@github.com:abhidevops03/jvm-sample.git']])
-        
-                }
-        }
-*/
-        
+               
         stage('maven build'){
             steps{
                 sh 'mvn clean package'
